@@ -23,7 +23,7 @@ for test in test_cases:
     print removal
     i = 0
     for char in string:
-        [removal]
+        # need to check if char matches removal
     print string
 
 
