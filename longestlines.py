@@ -22,28 +22,20 @@ Hello World
 """
 import sys
 test_cases = open(sys.argv[1], 'r')
-#test_cases = ["2", "Hello World", "CodeEval", "Quick Fox", "A", "San Francisco"]
 overall = []
-num_lines = sum(1 for line in test_cases)
-#num_lines = len(test_cases)
-number = 0
-i = 0
+number = int(test_cases.readline())
 
 for test in test_cases:
-    print "gothere"
     if test == "":
         break
-    elif test.isdigit():
-        number = int(test)
     else:
         overall.append(test)
 
-    if i == num_lines-1:
-        overall.sort(key=len)
-        overall.reverse()
-        printing = 0
-        while printing < number:
-            print overall[printing]
-            printing += 1
-    i += 1
+overall.sort(key=len)
+overall.reverse()
+printing = 0
+while printing < number:
+    print overall[printing]
+    printing += 1
+
 test_cases.close()
