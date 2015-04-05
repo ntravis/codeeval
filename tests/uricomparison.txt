@@ -1,0 +1,2 @@
+http://abc.com:80/~smith/home.html;http://ABC.com/%7Esmith/home.html
+http://abc.com:80/~smith/home.html;http://ABC.com/%7Esmith/home.htm1
