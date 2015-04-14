@@ -75,5 +75,5 @@ for test in test_cases:
             while x < difference:
                 for value in register.itervalues():
                     x = value
-                
+
 test_cases.close()
